@@ -6,14 +6,17 @@ namespace UpperCase
     {
         static void Main(string[] args)
         {
-            //declaring string 
-            string MyWords = "Comfort and Success are #GOALS!";
+            //instructing user to type a sentence
+            Console.WriteLine("Please type a sentence: ");
+
+            //declaring the string 
+            string myString = Console.ReadLine();
 
             //instructing comipler to make all letters UPPER case
-            MyWords = MyWords.ToUpper();
+            myString = myString.ToUpper();
 
             //ouput should read COMFORT AND SUCCESS ARE #GOALS!
-            Console.WriteLine(MyWords);
+            Console.WriteLine(myString);
             Console.ReadLine();
         }
     }
